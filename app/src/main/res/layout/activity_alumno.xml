@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EE207B9E"
+    tools:context=".AlumnoActivity">
+
+    <EditText
+        android:id="@+id/txtFechaIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtfechaingreso"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvFechaIngreso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txvFechaIngreso" />
+
+    <EditText
+        android:id="@+id/txtCarrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtcarrera"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvCarrera"
+        app:layout_constraintStart_toEndOf="@+id/txvCarrera" />
+
+    <TextView
+        android:id="@+id/txvFechaIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="9dp"
+        android:text="@string/txvfechaingreso"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txvCarrera"
+        app:layout_constraintEnd_toStartOf="@+id/txtFechaIngreso"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvCarrera" />
+
+    <TextView
+        android:id="@+id/txvNumeroCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="184dp"
+        android:text="@string/txvnumerocuenta"
+        android:textColor="#F8F3F3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvNombreAlumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/txvnombrealumno"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txvNumeroCuenta"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumeroCuenta" />
+
+    <EditText
+        android:id="@+id/txtAlumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtalumno"
+        app:layout_constraintStart_toEndOf="@+id/txvNombreAlumno"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroCuenta" />
+
+    <EditText
+        android:id="@+id/txtNumeroCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtnumerocuenta"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvNumeroCuenta"
+        app:layout_constraintStart_toEndOf="@+id/txvNumeroCuenta" />
+
+    <TextView
+        android:id="@+id/txvCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/txvcorreo"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txvFechaIngreso"
+        app:layout_constraintEnd_toStartOf="@+id/txtCorreo"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvFechaIngreso" />
+
+    <TextView
+        android:id="@+id/txvCarrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/txvcarrera"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txvNombreAlumno"
+        app:layout_constraintTop_toBottomOf="@+id/txvNombreAlumno" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtcorreo"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txvCorreo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txvCorreo" />
+
+    <Button
+        android:id="@+id/btnGuardarA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#070707"
+        android:text="@string/btnguardara"
+        android:textColor="#FFFFFF"
+        app:icon="@android:drawable/ic_menu_save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+
+    <Button
+        android:id="@+id/btnAtrasA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#090808"
+        android:text="@string/btnatrasa"
+        android:textColor="#FFFFFF"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGuardarA"
+        app:layout_constraintEnd_toEndOf="@+id/txtFechaIngreso"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="@+id/txvNombreAlumno" />
+</androidx.constraintlayout.widget.ConstraintLayout>

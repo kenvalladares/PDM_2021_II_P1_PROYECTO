@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3AA7E1"
+    tools:context=".VisualizarAlumnoActivity">
+
+    <TextView
+        android:id="@+id/txvNumeroCuentaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="264dp"
+        android:text="@string/txvnumerocuentab"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <EditText
+        android:id="@+id/txtNumeroCuentab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtnumerocuentaa"
+        app:layout_constraintBottom_toBottomOf="@+id/txvNumeroCuentaa"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txvNombreb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/txvnombreab"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumeroCuentab" />
+
+    <TextView
+        android:id="@+id/txvCorreob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/txvcorreob"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txvFechaIngresob"
+        app:layout_constraintTop_toBottomOf="@+id/txvFechaIngresob" />
+
+    <TextView
+        android:id="@+id/txvNumeroCuentab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="376dp"
+        android:text="@string/txvnumerocuentabb"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txvFechaIngresob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/txvfechaingreso"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txvCarrerab"
+        app:layout_constraintTop_toBottomOf="@+id/txvCarrerab" />
+
+    <TextView
+        android:id="@+id/txvCarrerab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/txvcarrera"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txvNombreb"
+        app:layout_constraintTop_toBottomOf="@+id/txvNombreb" />
+
+    <Button
+        android:id="@+id/btnBuscarA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:backgroundTint="#121111"
+        android:text="@string/btnbuscara"
+        android:textColor="#FFFFFF"
+        app:icon="?android:attr/actionModeFindDrawable"
+        app:layout_constraintEnd_toEndOf="@+id/txtNumeroCuentab"
+        app:layout_constraintStart_toStartOf="@+id/txtNumeroCuentab"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroCuentab" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

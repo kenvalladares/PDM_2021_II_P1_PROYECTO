@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9602E07"
+    android:backgroundTint="#661465DD"
+    android:foreground="#16C85252"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnlibros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="#F0181918"
+        android:backgroundTint="#F0131313"
+        android:foregroundTint="#121111"
+        android:text="@string/btnlibros"
+        android:textColor="#FFFFFF"
+        app:icon="@android:drawable/sym_contact_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVisualizarLibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#151515"
+        android:text="@string/btnvisualizarlibro"
+        android:textColor="#FFFFFF"
+        app:icon="@android:drawable/ic_menu_view"
+        app:layout_constraintEnd_toEndOf="@+id/btnlibros"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toEndOf="@+id/btnlibros"
+        app:layout_constraintTop_toBottomOf="@+id/btnlibros" />
+
+    <Button
+        android:id="@+id/btnAlumnos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#0E0E0E"
+        android:text="@string/btnalumnos"
+        android:textColor="#FFFFFF"
+        app:icon="@android:drawable/btn_star"
+        app:layout_constraintStart_toStartOf="@+id/btnVisualizarLibro"
+        app:layout_constraintTop_toBottomOf="@+id/btnVisualizarLibro" />
+
+    <Button
+        android:id="@+id/btnvisualizaralumnos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#0B0A0A"
+        android:text="@string/btnvisualizaralumnos"
+        android:textColor="#FFFFFF"
+        app:icon="@android:drawable/ic_menu_view"
+        app:layout_constraintEnd_toEndOf="@+id/btnAlumnos"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toEndOf="@+id/btnAlumnos"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlumnos" />
+
+    <Button
+        android:id="@+id/btnprestamolibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="#0C0C0C"
+        android:text="@string/btnprestamolibro"
+        android:textColor="#FFFFFF"
+        app:icon="@android:drawable/sym_contact_card"
+        app:layout_constraintStart_toStartOf="@+id/btnvisualizaralumnos"
+        app:layout_constraintTop_toBottomOf="@+id/btnvisualizaralumnos" />
+
+    <Button
+        android:id="@+id/btnvisualizarprestamolibro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#070707"
+        android:text="@string/btnvisualizarprestamolibro"
+        android:textColor="#FFFFFF"
+        app:icon="@android:drawable/ic_menu_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnprestamolibro" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

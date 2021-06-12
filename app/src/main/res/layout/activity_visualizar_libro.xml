@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3AA7E1"
+    tools:context=".VisualizarLibroActivity">
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginBottom="383dp"
+        android:backgroundTint="#090808"
+        android:text="@string/btnbuscar"
+        android:textColor="#FFFFFF"
+        app:icon="?android:attr/actionModeFindDrawable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txvNumeroLibros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/txvnumerolibros"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txvnombreb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtbuscarnumerolibro"
+        android:layout_width="183dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="24dp"
+        android:autoText="false"
+        android:backgroundTint="#9F5E5E"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtnumerolibros"
+        app:layout_constraintBottom_toTopOf="@+id/txvNumeroLibros"
+        app:layout_constraintStart_toEndOf="@+id/txvNumeroLibros"
+        app:layout_constraintTop_toTopOf="@+id/txvNumeroLibros" />
+
+    <TextView
+        android:id="@+id/txvnombreb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="6dp"
+        android:text="@string/txvnombreb"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txvnumerolibrob"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumeroLibros" />
+
+    <TextView
+        android:id="@+id/txvnumerolibrob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="71dp"
+        android:text="@string/txvnumerolibrob"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtbuscarnumerolibro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscar" />
+
+    <TextView
+        android:id="@+id/txvautorb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/txvautorb"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txvnombreb"
+        app:layout_constraintTop_toBottomOf="@+id/txvnombreb" />
+
+    <TextView
+        android:id="@+id/txveditorialb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/txveditorialb"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/txvfechapublicacionb"
+        app:layout_constraintTop_toBottomOf="@+id/txvfechapublicacionb" />
+
+    <TextView
+        android:id="@+id/txvfechapublicacionb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/txvfechapublicacionb"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txvautorb"
+        app:layout_constraintTop_toBottomOf="@+id/txvautorb" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

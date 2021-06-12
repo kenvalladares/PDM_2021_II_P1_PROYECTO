@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3AA7E1"
+    tools:context=".PrestamoLibroActivity">
+
+    <TextView
+        android:id="@+id/txvNumeroPrestamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="156dp"
+        android:text="@string/txvnumeroprestamo"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvFechaPrestamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="17dp"
+        android:text="@string/txvfechaprestamo"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txvNumeroPrestamo"
+        app:layout_constraintEnd_toStartOf="@+id/txtFechaPrestamo"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumeroPrestamo" />
+
+    <TextView
+        android:id="@+id/txvNumeroCuentaP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/txvnumerocuentap"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvFechaPrestamo" />
+
+    <TextView
+        android:id="@+id/txvNumeroLibroP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:text="@string/txvnumerolibrop"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/txvFechaPrestamo"
+        app:layout_constraintStart_toStartOf="@+id/txvFechaPrestamo"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumeroCuentaP" />
+
+    <TextView
+        android:id="@+id/txvFechaDevolucion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="14dp"
+        android:text="@string/txvfechadevolucion"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/txtFechaDevolucion"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvNumeroLibroP" />
+
+    <EditText
+        android:id="@+id/txtNumeroPrestamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtnumeroprestamo"
+        app:layout_constraintBottom_toBottomOf="@+id/txvNumeroPrestamo"
+        app:layout_constraintStart_toEndOf="@+id/txvNumeroPrestamo" />
+
+    <EditText
+        android:id="@+id/txtFechaPrestamo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtfechaprestamo"
+        app:layout_constraintBottom_toBottomOf="@+id/txvFechaPrestamo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txvFechaPrestamo" />
+
+    <EditText
+        android:id="@+id/txtNumeroCuentaP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtnumerocuentap"
+        app:layout_constraintStart_toEndOf="@+id/txvNumeroCuentaP"
+        app:layout_constraintTop_toBottomOf="@+id/txtFechaPrestamo" />
+
+    <EditText
+        android:id="@+id/txtNumeroLibroP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtnumerolibrop"
+        app:layout_constraintBottom_toBottomOf="@+id/txvNumeroLibroP"
+        app:layout_constraintStart_toEndOf="@+id/txvNumeroLibroP" />
+
+    <EditText
+        android:id="@+id/txtFechaDevolucion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txtfechadevolucion"
+        app:layout_constraintBottom_toTopOf="@+id/txvFechaDevolucion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txvFechaDevolucion"
+        app:layout_constraintTop_toTopOf="@+id/txvFechaDevolucion" />
+
+    <Button
+        android:id="@+id/btnGuardarP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="105dp"
+        android:backgroundTint="#090909"
+        android:text="@string/btnguardarp"
+        android:textColor="#FFFFFF"
+        app:icon="@android:drawable/ic_menu_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAtrasP"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAtrasP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:backgroundTint="#0B0A0A"
+        android:text="@string/btnatrasp"
+        android:textColor="#FFFFFF"
+        app:icon="@android:drawable/ic_menu_revert"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnGuardarP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGuardarP" />
+</androidx.constraintlayout.widget.ConstraintLayout>
